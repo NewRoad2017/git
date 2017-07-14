@@ -76,18 +76,20 @@ git clone https://github.com/NewRoad2017/git.git
 git checkout -b branchName
 ...git branch branchName
 ...git checkout branchName
-# look up the branchs
+// look up the branchs
 git branch
-# swich to another branch
+// swich to another branch
 git checkout branchName
-# merge the branch to the master
+// merge the branch to the master
 git merge branchName
-# delete the branch
+ delete the branch
 git branch -d branchName
 facilitate using the brach to complete the work
 
 8.2 solve conflict
-sth
+each should have add and commit
+8.3 the strategy of branch management
+
 
 
 
