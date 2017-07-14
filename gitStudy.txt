@@ -14,9 +14,80 @@ git diff filename before commit
 cat filename --scan the file
 4.version rollback
 git log (filename) --review the history 
-git reset --hard Head^(或者是某个ID)
+git reset --hard Head^(or one ID)
 !!只针对于修改，不针对于文件
 ！！！Why git is more excellent than others is that Git is tracing and managing the modifies. 
+
 5.unstage modify
+5.1 if you modify the file and you has not added to the staging area, you can use--
 git status
+will see 
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   gitStudy.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
 git checkout -- file
+5.2 if you has already added to the staging area,you should use 
+git status,will see 
+$ git status
+On branch mastergit 
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   gitStudy.txt
+
+git reset HEAD file
+$ git reset HEAD gitStudy.txt
+Unstaged changes after reset:
+M       gitStudy.txt
+
+the file will not be modified,but it will not in the staging area.
+6. delete file
+rm file
+git status but it is there in version repository
+so you can use git rm to delete the file or use git checkout to unstage the delete operation
+
+7.remote repository
+7.1 create .ssh
+ssh-kengen -t rsa -C"email address"
+the ssh-rsa will be added to C:/Users/38513/.ssh by default
+register you account in the https://github.com
+in your account,add the ssh_rsa_id_pub
+7.2 native to remote
+create a new repository by default
+git remote add origin git@github.com:NewRoad2017/git/git.git 
+git remote add origin https://github.com/NewRoad2017/git.git adopt in windows
+in the first time 
+git push -u origin master
+in the second time and so one
+git push origin master
+7.3 remoto to native
+create a new repository with README.txt
+then write clone command in the native  
+git clone https://github.com/NewRoad2017/git.git
+8.branch management
+8.1 create branch and switch to branch
+
+git checkout -b branchName
+...git branch branchName
+...git checkout branchName
+# look up the branchs
+git branch
+# swich to another branch
+git checkout branchName
+# merge the branch to the master
+git merge branchName
+# delete the branch
+git branch -d branchName
+facilitate using the brach to complete the work
+
+
+
+
+
+
