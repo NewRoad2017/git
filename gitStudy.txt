@@ -102,6 +102,7 @@ git stash pop
 
 Feature branch
 when it is not to merge ,just to delete -d or -D
+modify in git/master
 
 
 
