@@ -87,6 +87,7 @@ git branch -d branchName
 facilitate using the brach to complete the work
 
 8.2 solve conflict
+sth
 
 
 
