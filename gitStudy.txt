@@ -1,0 +1,22 @@
+1.create repository
+(mkdir )
+cd the 
+pwd-demonstrate the content
+git init
+2.add the file
+git add readme.txt
+(git add file1.txt
+ git add file2.txt file3.txt)
+git commit -m"wrote a readme file"
+3.trace the modify
+git status -- get the status
+git diff filename before commit
+cat filename --scan the file
+4.version rollback
+git log (filename) --review the history 
+git reset --hard Head^(或者是某个ID)
+!!只针对于修改，不针对于文件
+！！！Why git is more excellent than others is that Git is tracing and managing the modifies. 
+5.unstage modify
+git status
+git checkout -- file
