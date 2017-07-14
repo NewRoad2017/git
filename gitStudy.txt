@@ -71,7 +71,7 @@ create a new repository with README.txt
 then write clone command in the native  
 git clone https://github.com/NewRoad2017/git.git
 8.branch management
-8.1 create branch and switch to branch
+8.1 create branch and switch to branch and work
 
 git checkout -b branchName
 ...git branch branchName
@@ -85,6 +85,8 @@ git merge branchName
 # delete the branch
 git branch -d branchName
 facilitate using the brach to complete the work
+
+8.2 solve conflict
 
 
 
