@@ -89,10 +89,9 @@ facilitate using the brach to complete the work
 8.2 solve conflict
 each should have add and commit
 8.3 the strategy of branch management
+8.4 bug branchs
 
-
-
-
+$ git merge --no-ff -m "merged bug fix 101" issue-101
 
 
 
