@@ -89,9 +89,19 @@ facilitate using the brach to complete the work
 8.2 solve conflict
 each should have add and commit
 8.3 the strategy of branch management
-8.4 bug branchs
+git merge --no-ff -m"merge with no-ff" br2
+git log --graph --pretty=oneline --abbrev-commit
+8.4 bug branch
+you can use 
+get stash 之后再开始进行工作
+get stash list
+...get stash apply
+...get stash drop
+then 
+git stash pop
 
-$ git merge --no-ff -m "merged bug fix 101" issue-101
+Feature branch
+when it is not to merge ,just to delete -d or -D
 
 
 
